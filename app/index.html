@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Auth0 Authentication Example</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+</head>
+
+<body>
+    <h2>Auth0 Authentication Example</h2>
+    <p>Welcome to our page!</p>
+    <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+    <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+
+    <div class="hidden" id="gated-content">
+        <p>
+            You're seeing this content because you're currently
+            <strong>logged in</strong>.
+        </p>
+        <label>
+            Access token:
+            <code id="ipt-access-token"></code>
+        </label>
+        <label>
+            User profile:
+            <pre id="ipt-user-profile"></pre>
+        </label>
+    </div>
+
+    <button id="btn-call-api" disabled="true" onclick="callApi()">Call Api</button>
+
+    <!-- Container to hold the response from the private API call -->
+    <pre id="api-call-result"></pre>
+
+    <button id="btn-call-scoped-api" disabled="true" onclick="callScopedApi()">Call Scoped Api</button>
+
+    <!-- Container to hold the response from the scoped API call -->
+    <pre id="scoped-api-call-result"></pre>
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.hidden {
+    display: none;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f1f1f1;
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+textarea {
+    width: 100%;
+    min-height: 30rem;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
